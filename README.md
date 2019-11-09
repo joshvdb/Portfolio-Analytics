@@ -16,4 +16,4 @@ This project uses the Capital Asset Pricing Model and high-frequency trading ana
 5. Additional high-frequency trading analytics
 6. Portfolio Optimizer
 7. Seaborn plots
-8. Expansion to other asset classes
+8. Inclusion of other asset classes
