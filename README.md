@@ -20,29 +20,20 @@ This project uses the Capital Asset Pricing Model and high-frequency trading ana
 
 # Example Outputs
 
-Portfolio R-Squared = 0.5713749319708816
+Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts of: 0.15, 0.6, 0.2, and 0.05), and the S&P 500 (^GSPC) as the benchmark, in the date range: 2019-06-20 to 2019-11-08, we obtain the below portfolio analytics.
 
-Portfolio Beta = 1.6823252286102592
-
-Portfolio Volatility = 0.001774262341931516
-
-Portfolio Alpha (calculated from the returns regression) = 0.043032257203536886
-
-Portfolio Alpha (based on risk-free rate) = 0.0052482979658219735
-
-Portfolio Sharpe Ratio = 3.354557106775981
-
-Portfolio Tracking Error = 0.030298260899050793
-
-Analytical VaR (Normal Distribution) = 7.390523472420238% at -1.0% of daily returns
-
-Analytical VaR (t-Distribution) = 49.62040090212909% at -1.0% of daily returns
-
-Expected Shortfall (Normal Distribution) at 5.0% level = 3.592204573450777
-
-Expected Shortfall (t-Distribution) at 5.0% level = 7.077446307947621
-
-Historical VaR = 4.0% at -1.0% of daily returns
+1. Portfolio R-Squared = 0.5713749319708816
+2. Portfolio Beta = 1.6823252286102592
+3. Portfolio Volatility = 0.001774262341931516
+4. Portfolio Alpha (calculated from the returns regression) = 0.043032257203536886
+5. Portfolio Alpha (based on risk-free rate) = 0.0052482979658219735
+6. Portfolio Sharpe Ratio = 3.354557106775981
+7. Portfolio Tracking Error = 0.030298260899050793
+8. Analytical VaR (Normal Distribution) = 7.390523472420238% at -1.0% of daily returns
+9. Analytical VaR (t-Distribution) = 49.62040090212909% at -1.0% of daily returns
+10. Expected Shortfall (Normal Distribution) at 5.0% level = 3.592204573450777
+11. Expected Shortfall (t-Distribution) at 5.0% level = 7.077446307947621
+12. Historical VaR = 4.0% at -1.0% of daily returns
 
 # Limitations
 
