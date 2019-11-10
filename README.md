@@ -18,6 +18,32 @@ This project uses the Capital Asset Pricing Model and high-frequency trading ana
 11. Expected Shortfall (t-Distribution)
 12. Historical VaR
 
+# Example Outputs
+
+Portfolio R-Squared = 0.5713749319708816
+
+Portfolio Beta = 1.6823252286102592
+
+Portfolio Volatility = 0.001774262341931516
+
+Portfolio Alpha (calculated from the returns regression) = 0.043032257203536886
+
+Portfolio Alpha (based on risk-free rate) = 0.0052482979658219735
+
+Portfolio Sharpe Ratio = 3.354557106775981
+
+Portfolio Tracking Error = 0.030298260899050793
+
+Analytical VaR (Normal Distribution) = 7.390523472420238% at -1.0% of daily returns
+
+Analytical VaR (t-Distribution) = 49.62040090212909% at -1.0% of daily returns
+
+Expected Shortfall (Normal Distribution) at 5.0% level = 3.592204573450777
+
+Expected Shortfall (t-Distribution) at 5.0% level = 7.077446307947621
+
+Historical VaR = 4.0% at -1.0% of daily returns
+
 # Limitations
 
 1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of allowed server requests, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
