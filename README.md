@@ -35,6 +35,30 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 11. Expected Shortfall (t-Distribution) at 5.0% level = 7.077446307947621
 12. Historical VaR = 4.0% at -1.0% of daily returns
 
+**Daily Return vs Time (Portfolio and Benchmark)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Daily%20Return%20vs%20Time.png)
+
+**Returns Regression**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Returns%20Regression.png)
+
+**Analytical VaR (Normal Distribution)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Analytical%20VaR%20(Normal%20Distribution).png)
+
+**Analytical VaR (t Distribution)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Analytical%20VaR%20(t%20Distribution).png)
+
+**Historical VaR**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Historical%20VaR.png)
+
+**Trading Analytics (Apple)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Trading%20Analytics%20(Apple).png)
+
+**Price vs Time (Apple)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Price%20vs%20Time%20(Apple).png)
+
+**Return vs Time (Apple)**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Return%20vs%20Time%20(Apple).png)
+
 # Limitations
 
 1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of allowed server requests, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
