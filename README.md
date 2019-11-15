@@ -74,3 +74,4 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 7. Seaborn plots
 8. Inclusion of other asset classes
 9. Plot Expected Shortfall as an overlay on VaR plots
+10. Front-end UI (web-based or Android/iOS)
