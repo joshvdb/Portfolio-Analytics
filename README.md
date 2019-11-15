@@ -61,7 +61,7 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 
 # Limitations
 
-1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of allowed server requests, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
+1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of server requests this API allows, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
 
 # Outstanding Enhancements
 
