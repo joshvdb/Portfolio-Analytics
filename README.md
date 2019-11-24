@@ -3,6 +3,14 @@ Python-based project to deliver CAPM portfolio analytics and high-frequency trad
 
 This project uses the Capital Asset Pricing Model and high-frequency trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio metrics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and high-frequency trading analytics (SMA, EMA, VWAP, TWAP).
 
+# Installation Instructions
+
+The requirements file can be installed using the below commands in a terminal:
+
+**Conda:** conda install --file requirements.txt
+
+**Pip:** pip install -r requirements.txt
+
 # Current Analytics
 
 1. Portfolio R-Squared
