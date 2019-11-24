@@ -3,7 +3,7 @@ Python-based project to deliver CAPM portfolio analytics and high-frequency trad
 
 This project uses the Capital Asset Pricing Model and high-frequency trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio metrics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and high-frequency trading analytics (SMA, EMA, VWAP, TWAP).
 
-# Installation Instructions
+## Installation Instructions
 
 The requirements file can be installed using the below commands in a terminal:
 
@@ -11,7 +11,7 @@ The requirements file can be installed using the below commands in a terminal:
 
 **Pip:** pip install -r requirements.txt
 
-# Current Analytics
+## Current Analytics
 
 1. Portfolio R-Squared
 2. Portfolio Beta
@@ -26,7 +26,7 @@ The requirements file can be installed using the below commands in a terminal:
 11. Expected Shortfall (t-Distribution)
 12. Historical VaR
 
-# Example Outputs
+## Example Outputs
 
 Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts of: 0.15, 0.6, 0.2, and 0.05), and the S&P 500 (^GSPC) as the benchmark, in the date range: 2019-06-20 to 2019-11-08, we obtain the below portfolio analytics.
 
@@ -67,11 +67,11 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 **Return vs Time (Apple)**
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Return%20vs%20Time%20(Apple).png)
 
-# Limitations
+## Limitations
 
 1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of server requests this API allows, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
 
-# Outstanding Enhancements
+## Outstanding Enhancements
 
 1. Portfolio breakdown by sector
 2. Portfolio breakdown by country
