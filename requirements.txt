@@ -1,0 +1,7 @@
+numpy
+numba
+scipy
+pandas
+matplotlib
+statsmodels
+alpha_vantage
