@@ -426,7 +426,7 @@ def equity_price_analytics(ticker, high_prices, low_prices, open_prices, close_p
     return e_ma, s_ma, t_wap, v_wap, close
 
 
-def plot_equity_price_analytics(ticker, e_ma, s_ma, t_wap, v_wap, mean_prices):
+def plot_equity_price_analytics(ticker, e_ma, s_ma, t_wap, v_wap, mean_prices, interval):
     """
     Function to plot the mean price, EMA, SMA, TWAP and VWAP of a single equity.
     :param ticker: str
@@ -435,6 +435,7 @@ def plot_equity_price_analytics(ticker, e_ma, s_ma, t_wap, v_wap, mean_prices):
     :param t_wap: np.array([float])
     :param v_wap: np.array([float])
     :param mean_prices: np.array([float])
+    :param interval: int
     :return:
     """
 
@@ -590,4 +591,4 @@ plot_equity_returns(ticker, (equity_returns - 1))
 e_ma, s_ma, t_wap, v_wap, close = equity_price_analytics(ticker, high_prices, low_prices, open_prices, close_prices, volumes, alpha, interval)
 
 # plot price analytics
-plot_equity_price_analytics(ticker, e_ma, s_ma, t_wap, v_wap, close)
+plot_equity_price_analytics(ticker, e_ma, s_ma, t_wap, v_wap, close, interval)
