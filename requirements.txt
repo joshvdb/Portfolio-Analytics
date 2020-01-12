@@ -1,6 +1,7 @@
 numpy
 numba
 scipy
+flask
 pandas
 matplotlib
 statsmodels
