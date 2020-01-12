@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {background-color: #0911eb;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #00a2ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4547a0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<input>
+<h1 style="color:white;">Portfolio Analytics Dashboard</h1>
+<div>
+      <form method="POST" action="/get_equity_prices">
+      Equity Portfolio Tickers and Amounts [Format: (Ticker: Amount), (Ticker: Amount), ...]: <textarea id="equity_input" name="equity_input" rows="4" cols="200">{{equity_list}}</textarea>
+          <input type="submit" id="summarizer_button" name="summarizer_button" value="Get Equity Prices" rows="4" cols="200"></input>
+      </form>
+</div>
+<div>
+      <form method="POST" action="/get_benchmark_prices">
+      Benchmark Ticker: <textarea id="benchmark_input" name="benchmark_input" rows="4" cols="200">{{benchmark_ticker}}</textarea>
+          <input type="submit" id="benchmark_button" name="benchmark_button" value="Get Benchmark Prices" rows="4" cols="200"></input>
+          </form>
+</div>
+<p style="color:white;">Plot of Historical Returns</p>
+<img src="/returns_plot.png" alt="my plot">
+    <p style="color:white;">Plot of the Historical Returns Regression</p>
+<img src="/returns_regression_plot.png" alt="my plot">
+<p style="color:white;">Plot of the Analytical VaR using a Normal Distribution</p>
+<img src="/var_normal_plot.png" alt="my plot">
+<p style="color:white;">Plot of the Analytical VaR using a t-students Distribution</p>
+<img src="/var_t_dist_plot.png" alt="my plot">
+<p style="color:white;">Plot of the Historical VaR</p>
+<img src="/h_var_plot.png" alt="my plot">
+<p style="color:white;">Plot of the historical Equity Prices</p>
+<img src="/equity_prices_plot.png" alt="my plot">
+<p style="color:white;">Plot of the historical Equity Returns</p>
+<img src="/equity_returns_plot.png" alt="my plot">
+<p style="color:white;">Plot of the historical Equity Price Analytics</p>
+<img src="/equity_price_analytics_plot.png" alt="my plot">
+<div>
+      <form method="POST" action="/get_analytics">
+          Moving-average Interval: <input id="ma_interval" name="ma_interval" type="text" value="{{ma_interval_box}}">
+Moving-average Alpha Value: <input id="ma_alpha" name="ma_alpha" type="text" value="{{ma_alpha_box}}">
+Equity Ticker: <input id="ma_ticker" name="ma_ticker" type="text" value="{{ma_ticker_box}}">
+VaR Threshold (% Daily Returns): <input id="var_p" name="var_p" type="text" value="{{var_p_box}}">
+          VaR Threshold (confidence interval): <input id="ci" name="ci" type="text" value="{{ci_box}}">
+Risk-free Rate: <input id="rf" name="rf" type="text" value="{{rf_box}}">
+          Portfolio Analytics: <textarea id="portfolio_analytics" name="portfolio_analytics" rows="20" cols="200">{{portfolio_analytics_values}}</textarea>
+          <input type="submit" id="analytics_button" name="analytics_button" value="Get Portfolio Analytics" rows="4" cols="200"></input>
+          </form>
+</div>
+</body>
+</html>
