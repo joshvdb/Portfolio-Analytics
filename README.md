@@ -68,7 +68,7 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 **Return vs Time (Apple)**
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Return%20vs%20Time%20(Apple).png)
 
-## Graphical User Interface
+## Graphical User Interface Guide
 
 **Get Prices Tab**
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Get%20Prices%20Tab.png)
