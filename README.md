@@ -1,7 +1,7 @@
 # Portfolio Analytics
-Python-based project to deliver CAPM portfolio analytics and high-frequency trading analytics using based on equity time-series data (price/returns).
+Python-based project to deliver CAPM portfolio analytics and price/trade analytics based on equity time-series data (price/returns).
 
-This project uses the Capital Asset Pricing Model and high-frequency trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio metrics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and high-frequency trading analytics (SMA, EMA, VWAP, TWAP).
+This project uses the Capital Asset Pricing Model and price/trade trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio metrics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and high-frequency trading analytics (SMA, EMA, VWAP, TWAP).
 
 ## Installation Instructions
 
@@ -19,12 +19,13 @@ The requirements file can be installed using the below commands in a terminal:
 4. Portfolio Alpha (calculated from the returns regression)
 5. Portfolio Alpha (based on risk-free rate)
 6. Portfolio Sharpe Ratio
-7. Portfolio Tracking Error
-8. Analytical VaR (Normal Distribution)
-9. Analytical VaR (t-Distribution)
-10. Expected Shortfall (Normal Distribution)
-11. Expected Shortfall (t-Distribution)
-12. Historical VaR
+7. Portfolio Treynor Ratio
+8. Portfolio Tracking Error
+9. Analytical VaR (Normal Distribution)
+10. Analytical VaR (t-Distribution)
+11. Expected Shortfall (Normal Distribution)
+12. Expected Shortfall (t-Distribution)
+13. Historical VaR
 
 ## Example Outputs
 
