@@ -80,7 +80,14 @@ This tab contains two buttons that are used to get the most recent 5 months of p
 
 **Variables Tab**
 
+This tab lists the variables that are used to generate the portfolio analytics (together with the price data). The explanation for each variable is given below:
 
+1. Moving-average Interval: 
+2. Moving-average Alpha Value: 
+3. Equity Ticker: 
+4. VaR Threshold (% Daily Returns): 
+5. VaR Threshold (Confidence Interval): 
+6. Risk-free Rate: 
 
 ![Intro.pdf](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
 
@@ -89,8 +96,6 @@ This tab contains two buttons that are used to get the most recent 5 months of p
 This image shows an example of the text ouput of the program - all portfolio analytics are listed here. These can be used, together with the graphs produced by the program, to gain an understanding of an equity portfolio.
 
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Example%20Output.png)
-
-![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Portfolio%20Analytics%20Sample%20Page.pdf)
 
 ## Limitations
 
