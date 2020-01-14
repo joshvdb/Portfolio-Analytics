@@ -82,7 +82,7 @@ This tab contains two buttons that are used to get the most recent 5 months of p
 
 
 
-![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
+![Intro.pdf](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
 
 **Example Output**
 
