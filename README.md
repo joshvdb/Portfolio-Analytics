@@ -1,7 +1,7 @@
 # Portfolio Analytics
-Python-based project to deliver CAPM portfolio analytics and price/trade analytics using time-series data (price/returns) for equities.
+Python-based project to deliver CAPM portfolio analytics and algorithmic trading analytics using time-series data (price/returns) for equities.
 
-This project uses the Capital Asset Pricing Model and price/trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio metrics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and price/trading analytics (SMA, EMA, VWAP, TWAP). The GUI for this program is written in HTML5, using the Flask package to interface with Python.
+This project uses the Capital Asset Pricing Model and algorithmic trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio analytics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and algorithmic trading analytics (SMA, EMA, VWAP, TWAP). The GUI for this program is written in HTML5, using the Flask package to interface with Python.
 
 ## Installation Instructions
 
@@ -82,12 +82,12 @@ This tab contains two buttons that are used to get the most recent 5 months of p
 
 This tab lists the variables that are used to generate the portfolio analytics (together with the price data). The explanation for each variable is given below:
 
-1. Moving-average Interval: 
-2. Moving-average Alpha Value: 
-3. Equity Ticker: 
-4. VaR Threshold (% Daily Returns): 
-5. VaR Threshold (Confidence Interval): 
-6. Risk-free Rate: 
+1. Moving-average Interval: the number of days to use in the calculation of the Simple Moving Average.
+2. Moving-average Alpha Value: represents the degree of weighting decrease, a constant smoothing factor between 0 and 1. A higher alpha discounts older observations faster.
+3. Equity Ticker: The ticker of the equity to look at for algorithmic trading analytics.
+4. VaR Threshold (% Daily Returns): the % daily returns threshold to use in the calculation of VaR (Historical and Analytical). For example, entering -0.01 means that we will calculate the probability of losing more than 1% of the value of our portfolio (the Expected Shortfall will be calculated based on this value).
+5. VaR Threshold (Confidence Interval): the Confidence Interval to use in the calculation of the VaR (this is another way of specifying the VaR). For example, entering 0.05 means that we will calculate the % daily returns that we can expect to lose at 5% VaR (that is, the amount that we expect to lose/gain with a probability of 5%).
+6. Risk-free Rate: this is the risk-free rate that is used in the calculation of certain portfolio analytics (e.g. a 0.02 = 2%). This is often set as the interest rate on a 3 month U.S. Treasury Bill.
 
 ![Intro.pdf](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
 
