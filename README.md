@@ -70,13 +70,24 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 
 ## Graphical User Interface Guide
 
+A sample of the Graphical User Interface is shown in the file: Portfolio Analytics Sample Page.png.
+
 **Get Prices Tab**
+
+This tab contains two buttons that are used to get the most recent 5 months of prices for a set of equities and the benchmark.
+
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Get%20Prices%20Tab.png)
 
 **Variables Tab**
+
+
+
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
 
 **Example Output**
+
+This image shows an example of the text ouput of the program - all portfolio analytics are listed here. These can be used, together with the graphs produced by the program, to gain an understanding of an equity portfolio.
+
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Example%20Output.png)
 
 ## Limitations
