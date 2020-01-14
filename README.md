@@ -70,6 +70,15 @@ Using the equities: AAPL, GOOGL, BLK, and IBM (with respective portfolio wieghts
 
 ## Graphical User Interface
 
+**Get Prices Tab**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Get%20Prices%20Tab.png)
+
+**Variables Tab**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Variables%20Tab.png)
+
+**Example Output**
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Example%20Output.png)
+
 ## Limitations
 
 1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of server requests this API allows, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
