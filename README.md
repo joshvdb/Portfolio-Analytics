@@ -90,6 +90,8 @@ This image shows an example of the text ouput of the program - all portfolio ana
 
 ![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Diagrams/Example%20Output.png)
 
+![alt text](https://github.com/jjvdb/Portfolio-Analytics/blob/master/Portfolio%20Analytics%20Sample%20Page.pdf)
+
 ## Limitations
 
 1. The project uses the Alpha Advantage package to obtain price data. Due to the limited number of server requests this API allows, we currently save the data into Excel files, which are then read in by the main program, Portfolio-Analytics.py for processing. The Alpha Advantage model only allows us to obtain the prices and volume for each equity for the last 100 days
