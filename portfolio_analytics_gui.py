@@ -249,10 +249,10 @@ def risk_metrics(returns, weights, portfolio_vol, var_p, d):
     # calculate the expected shortfall for each distribution - this is the expected loss (in % daily returns) for the
     # portfolio in the worst a_var% of cases - it is effectively the mean of the values along the x-axis from
     # -infinity% to a_var%
-    es = (stats.norm.pdf(stats.norm.ppf((1 - a_var))) * sigma)/(1 - a_var) - mu
-    percent_point_function = stats.t.ppf((1 - a_var), d)
-    t_dist_es = -1/(1 - a_var) * (1-d)**(-1) * (d-2 + percent_point_function**2) * stats.t.pdf(percent_point_function, d)*sigma - mu
-    
+    es = (stats.norm(mu, sigma).pdf(stats.norm(mu, sigma).ppf((1 - a_var))) * sigma)/(1 - a_var) - mu
+    percent_point_function = stats.t(d).ppf((1 - a_var))
+    t_dist_es = -1/(1 - a_var) * (1-d)**(-1) * (d-2 + percent_point_function**2) * stats.t(d).pdf(percent_point_function)*sigma - mu
+
     return sigma, mu, a_var, t_dist_a_var, es, t_dist_es
 
 
@@ -275,16 +275,16 @@ def ci_specified_risk_metrics(returns, weights, portfolio_vol, ci, d):
     mu = np.sum(portfolio_returns(returns, weights))/returns.shape[1]
 
     # integrate the Probability Density Function to find the Analytical Value at Risk for both Normal and t distributions
-    var_level = stats.norm.ppf(ci, mu, sigma)
+    var_level = stats.norm(mu, sigma).ppf(ci)
     t_dist_var_level = stats.t(d).ppf(ci)
 
     # calculate the expected shortfall for each distribution - this is the expected loss (in % daily returns) for the
     # portfolio in the worst a_var% of cases - it is effectively the mean of the values along the x-axis from
     # -infinity% to a_var%
     es = (stats.norm.pdf(stats.norm.ppf((1 - ci))) * sigma)/(1 - ci) - mu
-    percent_point_function = stats.t.ppf((1 - ci), d)
-    t_dist_es = -1 / (1 - ci) * (1 - d) ** (-1) * (d - 2 + percent_point_function ** 2) * stats.t.pdf(percent_point_function, d) * sigma - mu
-    
+    percent_point_function = stats.t(d).ppf((1 - ci))
+    t_dist_es = -1 / (1 - ci) * (1 - d) ** (-1) * (d - 2 + percent_point_function ** 2) * stats.t(d).pdf(percent_point_function) * sigma - mu
+
     return sigma, mu, var_level, t_dist_var_level, es, t_dist_es
 
 
