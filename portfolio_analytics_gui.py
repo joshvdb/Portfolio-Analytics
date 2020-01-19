@@ -250,8 +250,9 @@ def risk_metrics(returns, weights, portfolio_vol, var_p, d):
     # portfolio in the worst a_var% of cases - it is effectively the mean of the values along the x-axis from
     # -infinity% to a_var%
     es = (stats.norm.pdf(stats.norm.ppf((1 - a_var))) * sigma)/(1 - a_var) - mu
-    t_dist_es = (stats.t(d).pdf(stats.t(d).ppf((1 - a_var))) * sigma * (d + (stats.t(d).ppf((1 - a_var)))**2))/((1 - a_var) * (d - 1)) - mu
-
+    percent_point_function = stats.t.ppf((1 - a_var), d)
+    t_dist_es = -1/(1 - a_var) * (1-d)**(-1) * (d-2 + percent_point_function**2) * stats.t.pdf(percent_point_function, d)*sigma - mu
+    
     return sigma, mu, a_var, t_dist_a_var, es, t_dist_es
 
 
@@ -281,8 +282,9 @@ def ci_specified_risk_metrics(returns, weights, portfolio_vol, ci, d):
     # portfolio in the worst a_var% of cases - it is effectively the mean of the values along the x-axis from
     # -infinity% to a_var%
     es = (stats.norm.pdf(stats.norm.ppf((1 - ci))) * sigma)/(1 - ci) - mu
-    t_dist_es = (stats.t(d).pdf(stats.t(d).ppf((1 - ci))) * sigma * (d + (stats.t(d).ppf((1 - ci)))**2))/((1 - ci) * (d - 1)) - mu
-
+    percent_point_function = stats.t.ppf((1 - ci), d)
+    t_dist_es = -1 / (1 - ci) * (1 - d) ** (-1) * (d - 2 + percent_point_function ** 2) * stats.t.pdf(percent_point_function, d) * sigma - mu
+    
     return sigma, mu, var_level, t_dist_var_level, es, t_dist_es
 
 
