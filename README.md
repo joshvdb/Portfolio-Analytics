@@ -1,5 +1,5 @@
 # Portfolio Analytics
-Python-based project to deliver CAPM portfolio analytics and algorithmic trading analytics using time-series data (price/returns) for equities.
+Python-based program that delivers CAPM portfolio analytics and algorithmic trading analytics using time-series data (price/returns) for equities.
 
 This project uses the Capital Asset Pricing Model and algorithmic trading analytics to gain insight into an equity portfolio. It allows a user to select a set of equities (by ticker), and plots a range of standard portfolio analytics (volatility, VaR, Expected Shortfall, Sharpe Ratio, etc), and algorithmic trading analytics (SMA, EMA, VWAP, TWAP). The GUI for this program is written in HTML5, using the Flask package to interface with Python.
 
